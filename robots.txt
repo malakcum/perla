@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://malakcum.github.io/perla/sitemap.xml
