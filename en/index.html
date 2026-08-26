@@ -26,6 +26,25 @@
     <link href="https://googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 
+    <style>
+        .lang-switch{display:flex;justify-content:flex-end;gap:10px;margin:0 0 12px;}
+        .lang-badge{position:relative;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;border:2px solid rgba(255,255,255,.85);box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s ease;}
+        .lang-badge .label{background:rgba(0,0,0,.45);color:#fff;font-family:'Inter',sans-serif;font-weight:800;font-size:10px;letter-spacing:.5px;padding:2px 5px;border-radius:6px;}
+        .lang-badge.lang-bg{background:linear-gradient(to bottom,#ffffff 0 33%,#00966E 33% 66%,#D62612 66% 100%);}
+        .lang-badge.lang-en{background:
+            linear-gradient(45deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%),
+            linear-gradient(-45deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%),
+            linear-gradient(45deg,transparent 49%,#C8102E 49%,#C8102E 51%,transparent 51%),
+            linear-gradient(-45deg,transparent 49%,#C8102E 49%,#C8102E 51%,transparent 51%),
+            linear-gradient(to bottom,transparent 38%,#fff 38%,#fff 62%,transparent 62%),
+            linear-gradient(to right,transparent 38%,#fff 38%,#fff 62%,transparent 62%),
+            linear-gradient(to bottom,transparent 44%,#C8102E 44%,#C8102E 56%,transparent 56%),
+            linear-gradient(to right,transparent 44%,#C8102E 44%,#C8102E 56%,transparent 56%),
+            #012169;}
+        .lang-badge:hover{transform:scale(1.08);}
+        .lang-badge.active{opacity:.5;pointer-events:none;border-style:dashed;}
+    </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -68,7 +87,10 @@
 
     <div class="container">
         <header>
-            <p class="lang-switch"><a href="/perla/">BG</a></p>
+            <div class="lang-switch">
+                <a href="/perla/" class="lang-badge lang-bg" aria-label="Прочети на български"><span class="label">BG</span></a>
+                <span class="lang-badge lang-en active" aria-current="page"><span class="label">EN</span></span>
+            </div>
             <h1>Luxury Apartment for Rent in the Gated Perla Complex, Burgas</h1>
             <p class="subtitle">A premium, fully furnished 2-bedroom apartment. Rented directly by the owner, no agency fees.</p>
         </header>
