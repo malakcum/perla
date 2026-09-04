@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://malakcum.github.io/perla/sitemap.xml
+Sitemap: https://malaktzum.bg/sitemap.xml
